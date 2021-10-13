@@ -41,7 +41,9 @@ let showResult = queryResponse => {
 // 2 Aan de hand van een longitude en latitude gaan we de yahoo wheater API ophalen.
 let getAPI = (lat, lon) => {
 	// Eerst bouwen we onze url op
+	const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=2c640e66083c20ab5ae4a699c49e1a01&units=metric&lang=nl&cnt=1`;
 	// Met de fetch API proberen we de data op te halen.
+	// const request = await
 	// Als dat gelukt is, gaan we naar onze showResult functie.
 };
 
